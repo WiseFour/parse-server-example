@@ -15,7 +15,7 @@ var emailAdapter = null;
 if (process.env.MAILGUN_API_KEY && process.env.MAILGUN_DOMAIN &&
     process.env.MAILGUN_FROM_ADDRESS) {
   emailAdapter = {
-    module: './Email/SimpleMailgunAdapter',
+    module: 'parse-server-simple-mailgun-adapter',
     options: {
       apiKey: process.env.MAILGUN_API_KEY,
       domain: process.env.MAILGUN_DOMAIN,
